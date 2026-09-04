@@ -38,7 +38,7 @@
 
         <div class="painel" id="painel-jato">
             <h2>Jato Executivo 🛩️</h2>
-            <div id="info-voo">
+            <div id="info-jato">
                 <p><strong>Voo:</strong> <span id="jato-codigo">---</span></p>
                 <p><strong>Altitude:</strong> <span id="jato-altitude">0</span> pés</p>
                 <p><strong>Supersônico:</strong> <span id="jato-status-super">Desativado</span></p>
@@ -53,7 +53,7 @@
 
         <div class="painel" id="painel-carga">
             <h2>Voo Cargueiro 📦</h2>
-            <div id="info-voo">
+            <div id="info-carga">
                 <p><strong>Voo:</strong> <span id="carga-codigo">---</span></p>
                 <p><strong>Carga Atual:</strong> <span id="carga-atual">0</span> / <span id="carga-max">0</span> kg</p>
             </div>
@@ -63,25 +63,26 @@
             </div>
         </div>
 
-   
-    <div class="painel">
-        <h2>Voos acontecendo</h2>
-        <div id="telaPainel"></div>
-    </div> </div>
+        <div class="painel">
+            <h2>Voos acontecendo</h2>
+            <div id="painel"></div>
+        </div>
 
-    <div class="painel">
-    <h2>Torre de Controle 🛬</h2>
+        <div class="painel">
+            <h2>Torre de Controle 🛬</h2>
+            <div class="controles">
+                <button id="btnPousoGeral">Pouso Geral</button>
+                <button id="btnPousoEmergencia">Pouso Emergência</button>
+            </div>
+        </div>
 
-    <div class="controles">
-        <button id="btnPousoGeral">Pouso Geral</button>
-        <button id="btnPousoEmergencia">Pouso Emergência</button>
     </div>
-</div>
 
     <script type="module" src="src/painel.js"></script>
     <script type="module" src="src/models/radarGlobal.js"></script>
     <script type="module" src="src/models/logbook.js"></script>
-        <script type="module" src="src/models/singleton.js"></script>
+    <script type="module" src="src/models/singleton.js"></script>
+    <script type="module" src="src/agenteIoT.js"></script>
 </body>
 
 </html>
